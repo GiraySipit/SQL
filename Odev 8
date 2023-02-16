@@ -1,0 +1,18 @@
+CREATE TABLE employee (
+	id SERIAL PRIMAL KEY,
+	name VARCHAR(50),
+	birthday DATE,
+	email VARCHAR(100)
+);
+INSERT INTO employee (id, name, birthday, email)
+VALUES(
+)
+;
+SELECT * FROM employee
+UPDATE employee
+SET name= 'Nickholas'
+WHERE id= 25;
+
+DELETE FROM employee
+WHERE id = 4
+RETURNING*;
